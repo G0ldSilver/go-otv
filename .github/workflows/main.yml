@@ -51,7 +51,7 @@ jobs:
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
 
-    - name: Build & Push - Kheops API
+    - name: Build & Push - Kheops GO-OTV
       id: build-image-api
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
