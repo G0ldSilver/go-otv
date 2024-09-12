@@ -52,7 +52,7 @@ runs:
     - name: 'Build and push image to Amazon ECR Repository'
       uses: docker/build-push-action@v6
       with:
-        platforms: linux/amd64,linux/arm64
+        platforms: linux/arm64
         context: .
         file: Dockerfile
         push: true
